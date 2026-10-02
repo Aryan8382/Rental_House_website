@@ -13,9 +13,9 @@ export default defineConfig({
   vite: {
     server: {
       proxy: {
-        // Proxy /uploads requests to the backend so images load in dev
+        // Proxy /uploads requests to the Railway backend so images load in dev
         "/uploads": {
-          target: "http://localhost:4000",
+          target: "https://backend-production-5f9d8.up.railway.app",
           changeOrigin: true,
         },
         // Proxy /api requests to the backend
