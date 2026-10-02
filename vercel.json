@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/uploads/:path*", "destination": "https://YOUR-BACKEND.up.railway.app/uploads/:path*" }
+  ]
+}
